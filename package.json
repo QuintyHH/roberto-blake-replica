@@ -15,8 +15,8 @@
   },
   "//": "CUSTOM CONFIGURATION",
   "config": {
-    "customUrl": "http://pug-starter.codetap.io",
-    "githubUrl": "http://github.com/marianzburlea/pug-starter.git",
+    "customUrl": "https://quintyhh.github.io/roberto-blake-replica",
+    "githubUrl": "https://github.com/QuintyHH/roberto-blake-replica.git",
     "deployToGithubIo": true,
     "directory": {
       "development": "tmp",
@@ -48,14 +48,14 @@
       "cssModular": false,
       "css": {
         "embed": true,
-        "external": false
+        "external": true
       }
     },
-    "autoLaunchBrowser": false
+    "autoLaunchBrowser": true
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marianzburlea/pug-starter.git"
+    "url": "git+https://github.com/QuintyHH/roberto-blake-replica.git"
   },
   "keywords": [
     "pug",
@@ -68,7 +68,7 @@
   "bugs": {
     "url": "https://github.com/marianzburlea/pug-starter/issues"
   },
-  "homepage": "https://github.com/marianzburlea/pug-starter#readme",
+  "homepage": "https://quintyhh.github.io/roberto-blake-replica",
   "devDependencies": {
     "@babel/cli": "7.2.3",
     "@babel/core": "7.3.3",
