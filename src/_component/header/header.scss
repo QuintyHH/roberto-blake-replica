@@ -1,3 +1,51 @@
-h1 {
-  font-weight: bold;
+.header {
+  background-color: $color-mine-shaft;
+  color: $color-white;
+}
+
+.header__top {
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid $color-mercury;
+}
+
+.header_name {
+  font-size: 1.7rem;
+  padding: 1.3rem;
+  display: inline-block;
+}
+
+.rbi-menu {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+.header__menu-item {
+  color: $color-white; 
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 1.2rem;
+  display: block;
+
+  &:first-child {
+    &:after {
+      font-family: 'roberto-blake-icon' !important;
+      content: "\e901";
+      font-size: 2rem;
+    }
+  }
+}
+
+.header__menu-list {
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+#toggle-menu:checked + .header__menu-list {
+  display: inherit;
 }

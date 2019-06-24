@@ -1,1 +1,10 @@
-h1 header
+nav.header
+  .header__top
+    span.header_name Roberto Blake
+    label.rbi-menu(for="toggle-menu")
+
+  //- pre=JSON.stringify(data['top-menu'], null, 2)
+  input(type="checkbox", id="toggle-menu")
+  .header__menu-list
+    each item in data['top-menu']
+      a.header__menu-item(href=item.href, target=item.target)=item.text
