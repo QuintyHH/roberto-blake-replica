@@ -95,3 +95,48 @@
   transform: rotateZ(180deg);
   display: inline-block;
 }
+
+.header__footer {
+  background-color: $color-mine-shaft; 
+  color: $color-white;
+  text-align: center;
+  padding: 1.5rem;
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.header__wrapper {
+  background-color: $color-pizazz;
+
+  h1 {
+    font-size: 3.6rem;
+    color: $color-white;
+    font-weight: normal;
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+.header__body {
+  background-image: url("asset/image/robertoblake2019header.jpg");
+  height: 61.1rem;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__download {
+  text-decoration: none;
+  border: 0.1rem solid $color-fuel-yellow;
+  background-color: $color-sandy-brown;
+  font-size: 2rem;
+  font-weight: normal;
+  color: $color-white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+}

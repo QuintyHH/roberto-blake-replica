@@ -14,22 +14,3 @@ html {
 .content {
   padding-top: 5rem;
 }
-
-.header__wrapper {
-  background-color: $color-pizazz;
-
-  h1 {
-    font-size: 3.6rem;
-    color: $color-white;
-    font-weight: normal;
-    padding: 1.5rem;
-    text-align: center;
-  }
-}
-
-.header__body {
-  background-image: url("asset/image/robertoblake2019header.jpg");
-  height: 61.1rem;
-  background-position: center center;
-  background-size: cover;
-}
