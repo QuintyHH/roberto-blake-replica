@@ -3,8 +3,10 @@ nav.header
     span.header_name Roberto Blake
     label.rbi-menu(for="toggle-menu")
 
-  //- pre=JSON.stringify(data['top-menu'], null, 2)
   input(type="checkbox", id="toggle-menu")
-  .header__menu-list
+  ul.header__menu-list
     each item in data['top-menu']
-      a.header__menu-item(href=item.href, target=item.target)=item.text
+      li.header__menu-item
+        a.header__menu-link(href=item.href, target=item.target)=item.text
+        if item.type && item.type == 'dropdown'
+          div test
