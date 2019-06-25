@@ -1,12 +1,20 @@
 nav.header
-  .header__top
-    span.header_name Roberto Blake
-    label.rbi-menu(for="toggle-menu")
 
   input(type="checkbox", id="toggle-menu")
   ul.header__menu-list
     each item in data['top-menu']
       li.header__menu-item
-        a.header__menu-link(href=item.href, target=item.target)=item.text
         if item.type && item.type == 'dropdown'
-          div test
+          input(type="checkbox", id="header-submenu")
+          label.header__menu-link(for="header-submenu")
+            span=item.text
+            span.rbi-circle-down
+          ul.header__submenu
+            each dropdown in item.children
+              li  
+                a.header__menu-sublink(href=dropdown.href)=dropdown.text
+        else
+          a.header__menu-link(href=item.href, target=item.target)=item.text
+  .header__top
+    span.header_name Roberto Blake
+    label.rbi-menu(for="toggle-menu")

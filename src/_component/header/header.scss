@@ -4,11 +4,13 @@
 }
 
 .header__top {
-  height: 52px;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 0.1rem solid $color-mercury;
+  position: relative;
+  background-color: $color-mine-shaft;
 }
 
 .header_name {
@@ -20,6 +22,7 @@
 .rbi-menu {
   font-size: 2.5rem;
   padding: 1.5rem;
+  cursor: pointer;
 }
 
 .header__menu-item {
@@ -29,25 +32,59 @@
       content: "\e901";
       font-size: 2rem;
     }
-}
-
-.header__menu-link {
-  color: $color-white; 
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 1.2rem;
-  display: block;  
   }
 }
 
-.header__menu-list {
-  display: none;
+.header__menu-item {
+  background-color: $color-mine-shaft;
 }
 
-#toggle-menu {
+.header__menu-link, 
+.header__menu-sublink {
+  color: $color-white; 
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  display: block;  
+  cursor: pointer;
+  }
+
+.header__menu-sublink {
+  padding: 0.5rem 2.5rem;
+}
+
+.header__menu-list {
+  transition: 0.25s;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  border: 0.1rem solid $color-mercury;
+  border-top: 0;
+}
+
+.rbi-circle-down {
+  padding: 0 1rem;
+}
+
+#toggle-menu,
+#header-submenu {
   display: none;
 }
 
 #toggle-menu:checked + .header__menu-list {
+  top:-110%;
+}
+
+.header__submenu {
+  display: none;
+}
+
+#header-submenu:checked + .header__menu-link + .header__submenu {
   display: inherit;
+}
+
+#header-submenu:checked + .header__menu-link .rbi-circle-down:before {
+  transform: rotateZ(180deg);
+  display: inline-block;
 }
