@@ -7,10 +7,29 @@ html, body {
 }
 
 html {
-  font-size: calc(12px + (24 - 12)*((100vmin - 400px)/(800 - 400)));
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 .content {
-  margin-top: 5.2rem;
+  padding-top: 5rem;
+}
+
+.header__wrapper {
+  background-color: $color-pizazz;
+
+  h1 {
+    font-size: 3.6rem;
+    color: $color-white;
+    font-weight: normal;
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+.header__body {
+  background-image: url("asset/image/robertoblake2019header.jpg");
+  height: 61.1rem;
+  background-position: center center;
+  background-size: cover;
 }
