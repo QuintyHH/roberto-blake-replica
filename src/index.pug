@@ -5,8 +5,9 @@ block config
     let description=`This is a showcase of a website replica`;
 
 block content
+  include _component/mixin/link
   .header__wrapper
-    h1 Entrepreneur, Author & Speaker
+    h1 ROBERTO BLAKE / CREATIVE ENTREPRENEUR / SPEAKER
     .header__panel
       .header__body
       .header__footer
@@ -14,4 +15,21 @@ block content
         a.header__download(
           href="join-newsletter.php",
           title="Download Free Personal Branding Book"
-        ) DOWNLOAD!
+        ) DOWNLOAD 
+  .landing__content
+    hr
+    h3 ROBERTO BLAKE HELPS BUILD BRANDS
+    p Roberto Blake is a Creative Entrepreneur helping businesses, brands and influencers market themselves effectively through content strategy and engagment.
+    p Roberto has produced over 1200 online videos and has background in advertising, marketing managment and brand design.
+    p He is the head of Create Awesome Media, a digtial agency speicalizing in Video Marketing Strategy and the founder of Awesome Creator Academy, an education platform helping online entrepreneurs and influencers.
+    p His work has been recognized by #[+link("https://www.forbes.com/sites/markfidelman/2016/09/06/20-must-watch-youtube-channels-that-will-change-your-business/","Forbes","Forbes")], #[+link("https://consent.yahoo.com/collectConsent?sessionId=3_cc-session_2fe3ca6b-ef6b-45bc-978f-cece28d2252d&lang=en-us&inline=false","Huffington Post","Huffington Post")], #[+link("https://blogs.adobe.com/creativecloud/tag/roberto-blake/","Adobe","Adobe")] and #[+link("http://www.photoshopcreative.co.uk/image/47806/feel_the_noise","Photoshop Creative Magazines","Photoshop Creative Magazines")].
+    p He is a speaker at events like #[strong VIDCON] and #[strong VIDSUMMIT]
+    hr
+    .youtube-video-16-by-9
+      iframe(
+        width="100%",
+        height="100%", 
+        src="https://www.youtube.com/embed/dxAhKLg87Gs",
+        frameborder="0",
+        allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture",
+        allowfullscreen)
