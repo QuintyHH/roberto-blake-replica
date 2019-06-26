@@ -1,16 +1,63 @@
 .footer {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
+    a {
+      text-decoration: none;
+      color: $color-astral;
+      font-weight: bold;
+  }
+}
+
+.footer__description {
+  color: $color-white;
+  width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .footer__link {
   padding: 1.5rem;
   display: block;
   color: $color-astral;
-  text-decoration: none;
-  
   &:hover {
     text-decoration: underline;
     color: $color-bay-of-many;
+  }
+}
+
+.footer__social {
+  background-color: $color-pizazz;
+  margin-bottom: 2rem;
+  padding: 3rem 0rem 1rem 0rem;
+  color: $color-white;
+
+  h2 {
+    font-size: 3rem;
+    padding: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+.social__icon {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  background-image: url("asset/image/social-logo-sprite.png");
+}
+
+.social__item {
+  &:nth-of-type(2) .social__icon{
+    background-position-y: -15rem;
+  }
+  &:nth-of-type(3) .social__icon{
+    background-position-y: -30rem;
+  }
+  &:nth-of-type(4) .social__icon{
+    background-position-y: -45rem;
   }
 }
