@@ -1,0 +1,12 @@
+extends ../_component/layout/layout
+block config
+  -
+    let title=`Learn more about Roberto Blake`;
+    let description=`This is a showcase of a website replica`;
+
+block content
+  include ../_component/mixin/link
+  .header__wrapper
+    h1 WHO IS ROBERTO BLAKE / MY STORY
+    .header__panel
+      .header__body--about
