@@ -1,0 +1,143 @@
+.header {
+  background-color: $color-mine-shaft;
+  color: $color-mercury;
+}
+
+.header__top {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid $color-mercury;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  background-color: $color-mine-shaft;
+  z-index: 1;
+}
+
+.header_name {
+  font-size: 2rem;
+  padding: 1.5rem;
+  display: inline-block;
+}
+
+.rbi-menu {
+  font-size: 2.5rem;
+  padding: 0.4rem 1rem;
+  margin: 1.5rem;
+  cursor: pointer;
+  border: 0.2rem solid $color-mercury;
+  border-radius: 0.5rem;
+}
+
+.header__menu-item {
+  &:first-child {
+    &:after {
+      font-family: 'roberto-blake-icon' !important;
+      content: "\e901";
+      font-size: 2rem;
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+.header__menu-item {
+  background-color: $color-mine-shaft;
+}
+
+.header__menu-link, 
+.header__menu-sublink {
+  color: $color-mercury; 
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  display: block;  
+  cursor: pointer;
+  }
+
+.header__menu-sublink {
+  padding: 0.5rem 2.5rem;
+}
+
+.header__menu-list {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  border: 0.1rem solid $color-mercury;
+  border-top: 0;
+}
+
+.rbi-circle-down {
+  padding: 0 1rem;
+}
+
+#toggle-menu,
+#header-submenu {
+  display: none;
+}
+
+#toggle-menu:checked + .header__menu-list {
+  top: 5rem;
+  transition: 0.25s;
+}
+
+.header__submenu {
+  display: none;
+}
+
+#header-submenu:checked + .header__menu-link + .header__submenu {
+  display: inherit;
+}
+
+#header-submenu:checked + .header__menu-link .rbi-circle-down:before {
+  transform: rotateZ(180deg);
+  display: inline-block;
+}
+
+.header__footer {
+  background-color: $color-mine-shaft; 
+  color: $color-mercury;
+  text-align: center;
+  padding: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.header__wrapper {
+  background-color: $color-pizazz;
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif';
+
+  h1 {
+    font-size: 3.6rem;
+    color: $color-white;
+    font-weight: normal;
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+.header__body {
+  background-image: url("asset/image/robertoblake2019header.jpg");
+  height: 61.1rem;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__download {
+  text-decoration: none;
+  border: 0.1rem solid $color-fuel-yellow;
+  background-color: $color-sandy-brown;
+  font-size: 2rem;
+  font-weight: normal;
+  color: $color-white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+}
