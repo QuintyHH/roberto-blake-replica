@@ -5,7 +5,7 @@
     p
       a(href="tel:+1-518-406-8664") P: 518.406.8664 
     p
-      img(src="/asset/image/roberto-blake-email.png")
+      img(src=`${baseUrl}asset/image/roberto-blake-email.png`)
     ul
       each social in data.footer
         li.social__item
@@ -16,4 +16,4 @@
           p.footer__description=social.description
   p Copyright &copy; 2017 - All Rights Reserved
   p
-    a.footer__link(href="/") Roberto Blake
+    a.footer__link(href=`${baseUrl}`) Roberto Blake

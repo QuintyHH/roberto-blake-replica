@@ -12,9 +12,15 @@ nav.header
           ul.header__submenu
             each dropdown in item.children
               li  
-                a.header__menu-sublink(href=dropdown.href)=dropdown.text
+                if dropdown.external == "yes"
+                  a.header__menu-sublink(href=dropdown.href)=dropdown.text
+                else
+                  a.header__menu-sublink(href=`${baseUrl}`+dropdown.href)=dropdown.text
         else
-          a.header__menu-link(href=item.href, target=item.target)=item.text
+          if item.external == "yes"
+            a.header__menu-link(href=item.href, target=item.target)=item.text
+          else
+           a.header__menu-link(href=`${baseUrl}`+item.href, target=item.target)=item.text
   .header__top
     span.header_name Roberto Blake
     label.rbi-menu(for="toggle-menu")
