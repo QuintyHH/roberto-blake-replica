@@ -20,7 +20,7 @@ nav.header
           if item.external == "yes"
             a.header__menu-link(href=item.href, target=item.target)=item.text
           else
-           a.header__menu-link(href=`${baseUrl}`+item.href, target=item.target)=item.text
+            a.header__menu-link(href=`${baseUrl}`+item.href, target=item.target)=item.text
   .header__top
     span.header_name Roberto Blake
     label.rbi-menu(for="toggle-menu")

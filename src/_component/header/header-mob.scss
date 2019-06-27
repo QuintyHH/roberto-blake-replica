@@ -39,6 +39,7 @@
 }
 
 .header__menu-item {
+  background-color: $color-mine-shaft;
   &:first-child {
     & .header__menu-link:after {
       font-family: 'roberto-blake-icon' !important;
@@ -50,10 +51,6 @@
       color: $color-fuel-yellow;
     }
   }
-}
-
-.header__menu-item {
-  background-color: $color-mine-shaft;
 }
 
 .header__menu-link, 

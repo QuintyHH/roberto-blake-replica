@@ -5,6 +5,8 @@
     z-index: 2;
     left:16rem;
     border:0;
+    text-align: center;
+    // justify-content: center;
   }
   .header__menu-item{
     list-style-type: none;
@@ -12,7 +14,7 @@
 
     &:first-child .header__menu-link {
       padding-top: 0.5rem;
-     }
+    }
   }
 
   .header__menu-link {
