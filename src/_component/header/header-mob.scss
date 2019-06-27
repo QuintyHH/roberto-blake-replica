@@ -40,7 +40,7 @@
 
 .header__menu-item {
   &:first-child {
-    &:after {
+    & .header__menu-link:after {
       font-family: 'roberto-blake-icon' !important;
       content: "\e901";
       font-size: 2rem;
