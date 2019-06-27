@@ -21,6 +21,9 @@
   font-size: 2rem;
   padding: 1.5rem;
   display: inline-block;
+  &:hover {
+    color: $color-fuel-yellow;
+  }
 }
 
 .rbi-menu {
@@ -30,6 +33,9 @@
   cursor: pointer;
   border: 0.2rem solid $color-mercury;
   border-radius: 0.5rem;
+  &:hover {
+    color: $color-fuel-yellow;
+  }
 }
 
 .header__menu-item {
@@ -39,6 +45,9 @@
       content: "\e901";
       font-size: 2rem;
       padding: 0 1.5rem;
+    }
+    &:hover {
+      color: $color-fuel-yellow;
     }
   }
 }
@@ -55,6 +64,9 @@
   padding: 0.75rem 1.5rem;
   display: block;  
   cursor: pointer;
+    &:hover {
+      color: $color-fuel-yellow;
+    }
   }
 
 .header__menu-sublink {
@@ -136,7 +148,7 @@
 }
 
 .header__body--about{
-  background-image: url("asset/image/robertoblake2016-design-header.jpg");
+  background-image: url("asset/image/robertoblake2019-design-header.jpg");
   @extend %header__body;
 }
 
